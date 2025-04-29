@@ -12,6 +12,8 @@ integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879
 
 
 <link rel="stylesheet" href="./css/index.css"/>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 	
@@ -49,8 +51,8 @@ integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879
 				<span class="mini-title">일별박스오피스 조회</span>
 				
 				<div>
-					<input type="date"/>
-					<button class="my-btn">
+					<input id="date" type="date"/>
+					<button id="get-movie-btn">
 						<i class="fa-solid fa-magnifying-glass"></i>
 						<span>조회하기</span>
 					</button>
@@ -66,29 +68,14 @@ integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879
 			      <th scope="col">개봉일</th>
 			    </tr>
 			  </thead>
-			  <tbody>
-			    <tr>
-			      <th scope="row">1</th>
-			      <td>멋사영화</td>
-			      <td>100000 명</td>
-			      <td>2024-04-02</td>
-			    </tr>
-			    <tr>
-			      <th scope="row">1</th>
-			      <td>멋사영화</td>
-			      <td>100000 명</td>
-			      <td>2024-04-02</td>
-			    </tr>
-			    <tr>
-			      <th scope="row">1</th>
-			      <td>멋사영화</td>
-			      <td>100000 명</td>
-			      <td>2024-04-02</td>
-			    </tr>
-			    
+			  <tbody id="movie-list">
+
 			  </tbody>
 			</table>
 		</div>
 	</section>
 </body>
+
+<script src="./js/rest-api.js"></script>
+
 </html>
